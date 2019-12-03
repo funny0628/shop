@@ -1,0 +1,173 @@
+.user {
+  height: 100%;
+  background-color: #f6f6f6;
+  @bg-img: linear-gradient(90deg, #f78c87 0%, #ec597c 100%), linear-gradient(#000000, #000000);
+  .msg {
+    position: absolute;
+    top: 11.5upx;
+    right: 48upx;
+    width: 55upx;
+    height: 55upx;
+    image {
+      width: 100%;
+      height: 100%;
+    }
+    &-count {
+      width: 32upx;
+      height: 32upx;
+      top: -6upx;
+      right: -15upx;
+      z-index: 2;
+      border-radius: 50%;
+      position: absolute;
+      background: #ff4e1f;
+      font-size: 20upx;
+      color: #ffffff;
+      text-align: center;
+      line-height: 32upx;
+    }
+  }
+  &-header {
+    width: 750upx;
+    height: 250upx;
+    background-image: @bg-img;
+  }
+  &-info {
+    position: relative;
+    padding-left: 30upx;
+    width: 750upx;
+    height: 120upx;
+  }
+  &-photo {
+    vertical-align: top;
+    display: inline-block;
+    width: 120upx;
+    height: 120upx;
+    background-color: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    image {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &-name {
+    vertical-align: top;
+    display: inline-block;
+    padding-left: 20upx;
+    font-size: 34upx;
+    color: #fff;
+    line-height: 120upx;
+  }
+  .sign-in-btn {
+    position: absolute;
+    right: 0;
+    top: 30upx;
+    width: 210upx;
+    height: 60upx;
+    line-height: 60upx;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 30upx 0upx 0upx 30upx;
+    font-size: 24upx;
+    color: #fed0cf;
+    padding-left: 62upx;
+    &::after {
+      content: ' ';
+      position: absolute;
+      left: 20upx;
+      top: 15upx;
+      width: 30upx;
+      height: 30upx;
+      background: url('~@/static/user/sign-in.png') center center;
+      background-size: 100% 100%;
+    }
+  }
+  .order-menu {
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+    padding: 58upx 30upx;
+    margin: -93upx auto 0;
+    width: 690upx;
+    height: 220upx;
+    background-color: #ffffff;
+    box-shadow: 0upx 10upx 10upx 0upx rgba(186, 187, 188, 0.41);
+    border-radius: 10upx;
+    &-item {
+      position: relative;
+      .order-total {
+        position: absolute;
+        top: -15upx;
+        left: 78.75upx;
+        border-radius: 15upx;
+        padding: 0 10upx;
+        font-size: 18upx;
+        color: #f84e91;
+        height: 30upx;
+        line-height: 30upx;
+        background-color: #fff;
+        border: 2upx solid #f84e91;
+      }
+      flex: 1;
+      text-align: center;
+      image {
+        margin: 0 auto;
+        display: block;
+        width: 60upx;
+        height: 60upx;
+      }
+      text {
+        font-size: 24upx;
+        color: #414141;
+        line-height: 48upx;
+      }
+    }
+  }
+  .user-menu {
+    margin: 30upx auto 0;
+    width: 690upx;
+    background-color: #fff;
+    border-radius: 10upx;
+    &-item {
+      position: relative;
+      height: 100upx;
+      &:last-child {
+        border-bottom: 0;
+      }
+      image {
+        position: absolute;
+        left: 20upx;
+        top: 32upx;
+        width: 36upx;
+        height: 36upx;
+      }
+      view {
+        position: absolute;
+        top: 0;
+        left: 70upx;
+        width: 620upx;
+        box-sizing: border-box;
+        height: 100upx;
+        line-height: 100upx;
+        border-bottom: 2upx solid #f6f6f6;
+        font-size: 30upx;
+        color: #2d2d2d;
+        text {
+          margin-left: 20upx;
+          font-size: 30upx;
+          color: #ff8d06;
+        }
+        &.click::after {
+          content: ' ';
+          position: absolute;
+          top: 36upx;
+          right: 20upx;
+          width: 16upx;
+          height: 28upx;
+          background: url('~@/static/common/right.png') center center;
+          background-size: 100% 100%;
+        }
+      }
+    }
+  }
+}

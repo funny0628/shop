@@ -1,0 +1,75 @@
+.code-area {
+  text-align: center;
+  .flex-box {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+  }
+
+  .item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80upx;
+    height: 80upx;
+    font-size: 30upx;
+    font-weight: bold;
+    color: #333333;
+    // line-height: 100upx;
+    box-sizing: border-box;
+    border: 2upx solid #cccccc;
+    border-right: none;
+    &:last-of-type {
+      border-right: 2upx solid #cccccc;
+    }
+  }
+
+  .item:last-child {
+    margin-right: 0;
+  }
+
+  .active .line {
+    display: block;
+  }
+
+  .line {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 2upx;
+    height: 40upx;
+    background: #ff4b4b;
+    animation: twinkling 1s infinite ease;
+  }
+
+  .hide-input {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    text-align: left;
+    z-index: 9;
+    opacity: 1;
+  }
+
+  @keyframes twinkling {
+    0% {
+      opacity: 0.2;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 0.2;
+    }
+  }
+
+  .dot {
+    font-size: 100upx;
+  }
+}

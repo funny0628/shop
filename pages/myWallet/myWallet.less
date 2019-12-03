@@ -1,0 +1,75 @@
+.wallet {
+  .wallet-container {
+    position: relative;
+    height: 508upx;
+    .wallet-account {
+      position: fixed;
+      .wallet-info {
+        height: 440upx;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        align-items: center;
+        background-image: url("~@/static/wallet/wallet.jpg");
+        background-size: cover;
+        .balance {
+          font-size: 88upx;
+          margin-top: 120upx;
+        }
+        .sub-tit {
+          font-size: 24upx;
+        }
+        .operation {
+          margin-top: 60upx;
+          width: 100vw;
+          height: 88upx;
+          display: flex;
+          color: #be9e5f;
+          font-size: 30upx;
+          line-height: 30upx;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          .recharge,
+          .withdraw {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+          }
+          .img {
+            width: 44upx;
+            height: 34upx;
+            margin-right: 22upx;
+          }
+        }
+      }
+      .hint {
+        font-size: 30upx;
+        color: #020202;
+        padding: 0 30upx 28upx 30upx;
+        border-bottom: 1upx solid #eee;
+        background-color: #fff;
+      }
+    }
+  }
+  .trade-list {
+    .list-item {
+      margin: 0 30upx;
+      height: 140upx;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 30upx;
+      color: #242424;
+      border-bottom: 2upx solid #eee;
+      .list-info {
+        height: 140upx;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+      }
+    }
+  }
+}

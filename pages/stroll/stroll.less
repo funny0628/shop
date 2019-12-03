@@ -1,0 +1,48 @@
+.stroll {
+  @bg-img: linear-gradient(90deg, #f78c87 0%, #ec597c 100%), linear-gradient(#000000, #000000);
+  background-color: #f6f6f6;
+  /* #ifdef APP-PLUS */
+  padding-bottom: 112upx;
+  /* #endif */
+  height: 100%;
+  &-tab {
+    position: relative;
+    width: 750upx;
+    font-size: 0;
+    &-item {
+      display: inline-block;
+      text-align: center;
+      width: 120upx;
+      font-size: 28upx;
+      color: #000;
+      line-height: 88upx;
+    }
+    .underline {
+      position: absolute;
+      left: 0upx;
+      bottom: 10upx;
+      width: 60upx;
+      height: 2px;
+      background-color: #f84e91;
+      border-radius: 5upx;
+      transition: 0.5s;
+    }
+    .active {
+      position: relative;
+      font-size: 30upx;
+      color: #f84e91;
+    }
+  }
+  &-list {
+    // margin-top: 40upx;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30upx;
+    &-item {
+      margin-left: 30upx;
+      &:nth-of-type(n + 3) {
+        margin-top: 20upx;
+      }
+    }
+  }
+}

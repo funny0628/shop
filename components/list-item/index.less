@@ -1,0 +1,70 @@
+.list-item {
+  width: 330upx;
+  height: 452upx;
+  background-color: #fff;
+  border-radius: 10upx;
+  .img {
+    width: 100%;
+    height: 330upx;
+    image {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .info {
+    padding: 0 20upx;
+    .title {
+      margin-top: 8upx;
+      line-height: 24upx;
+      font-size: 24upx;
+      color: #363636;
+    }
+    .tag {
+      margin-top: 10upx;
+      height: 30upx;
+      display: flex;
+      &-item {
+        font-size: 20upx;
+        display: flex;
+        padding: 0 10upx;
+        color: #ccc;
+        border: 1upx solid #ccc;
+        border-radius: 14upx;
+        margin-right: 10upx;
+        &.recommend {
+          color: #f84e91;
+          border: 1upx solid #f84e91;
+        }
+        &.hot {
+          color: #f84e5a;
+          border: 1upx solid #f84e5a;
+        }
+        &.new {
+          color: #47a3f9;
+          border: 1upx solid #47a3f9;
+        }
+      }
+    }
+    .price {
+      margin-top: 8upx;
+      line-height: 28upx;
+      color: #ff8d06;
+      .small {
+        font-size: 22upx;
+      }
+      .big {
+        font-size: 30upx;
+      }
+      .money {
+        color: #f84e91;
+      }
+      .gold {
+        color: #ff8d06;
+      }
+      .plus {
+        font-size: 30upx;
+        color: #767676;
+      }
+    }
+  }
+}

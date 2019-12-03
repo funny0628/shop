@@ -1,0 +1,43 @@
+.order {
+  height: 100%;
+  padding-bottom: 90upx; //  挤一下tab
+  background-color: #f6f6f6;
+  &-tab {
+    position: relative;
+    width: 750upx;
+    font-size: 0;
+    &-item {
+      display: inline-block;
+      text-align: center;
+      width: 120upx;
+      font-size: 28upx;
+      color: #000;
+      line-height: 88upx;
+    }
+    .underline {
+      position: absolute;
+      left: 0upx;
+      bottom: 10upx;
+      width: 60upx;
+      height: 2px;
+      background-color: #f84e91;
+      border-radius: 5upx;
+      transition: 0.5s;
+    }
+    .active {
+      position: relative;
+      font-size: 30upx;
+      color: #f84e91;
+    }
+  }
+  &-list {
+    padding-left: 30upx;
+    &-item {
+      // margin-top: 20upx;
+      // margin-bottom: 20upx;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,464 @@
+{
+  "pages": [
+    {
+      "path": "pages/home/home",
+      "style": {
+        "navigationStyle": "custom",
+        "app-plus": {
+          "bounce": "none",
+          "titleNView": false,
+          "subNVues": [
+            {
+              "id": "update-mask",
+              "type": "popup",
+              "path": "pages/home/update/mask.nvue",
+              "style": {
+                "margin": "auto",
+                "width": "100%",
+                "height": "100%",
+                "mask": "rgba(0, 0, 0, 0.5)",
+                "background": "transparent",
+                "zindex": 9998
+              }
+            },
+            {
+              "id": "update-popup",
+              "path": "pages/home/update/update.nvue",
+              "type": "popup",
+              "style": {
+                "margin": "auto",
+                "width": "550upx",
+                "height": "698upx",
+                "position": "fixed",
+                "zindex": 9999,
+                "background": "transparent"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "path": "pages/category/category",
+      "style": {
+        "navigationBarTitleText": "分类",
+        "app-plus": {
+          "bounce": "none",
+          "titleNView": false
+        }
+      }
+    },
+    {
+      "path": "pages/test/test",
+      "style": {
+        "navigationStyle": "custom",
+        "app-plus": {
+          "bounce": "none",
+          "titleNView": false
+        }
+      }
+    },
+    {
+      "path": "pages/game/game",
+      "style": {
+        "navigationStyle": "custom",
+        "app-plus": {
+          "bounce": "none",
+          "titleNView": false
+        }
+      }
+    },
+    {
+      "path": "pages/message/message",
+      "style": {
+        "navigationBarTitleText": "消息",
+        "app-plus": {
+          "bounce": "none",
+          "titleNView": false
+        }
+      }
+    },
+    {
+      "path": "pages/pay/pay",
+      "style": {
+        "navigationBarTitleText": "支付",
+        "app-plus": {
+          "bounce": "none",
+          "titleNView": false
+        }
+      }
+    },
+    {
+      "path": "pages/pay/pay-success",
+      "style": {
+        "navigationBarTitleText": "支付成功",
+        "app-plus": {
+          "bounce": "none",
+          "titleNView": false
+        }
+      }
+    },
+    {
+      "path": "pages/message/message-detail",
+      "style": {
+        "navigationBarTitleText": "系统消息",
+        "app-plus": {
+          "bounce": "none",
+          "titleNView": false
+        }
+      }
+    },
+    {
+      "path": "pages/stroll/stroll",
+      "style": {
+        "navigationBarTitleText": "逛逛",
+        "app-plus": {
+          "bounce": "none",
+          "titleNView": false
+        }
+      }
+    },
+    {
+      "path": "pages/login/login",
+      "style": {
+        "navigationBarTitleText": "",
+        "navigationStyle": "custom",
+        "app-plus": {
+          "bounce": "none",
+          "titleNView": false
+        }
+      }
+    },
+    {
+      "path": "pages/block/block",
+      "style": {
+        "navigationBarTitleText": "",
+        "navigationStyle": "custom",
+        "app-plus": {
+          "titleNView": false
+        }
+      }
+    },
+    {
+      "path": "pages/category/cate-goods",
+      "style": {
+        "navigationBarTitleText": "",
+        "navigationStyle": "custom",
+        "app-plus": {
+          "titleNView": false,
+          "bounce": "none"
+        }
+      }
+    },
+    {
+      "path": "pages/login/retrievepassword",
+      "style": {
+        "navigationBarTitleText": "",
+        "navigationStyle": "custom",
+        "app-plus": {
+          "titleNView": false,
+          "bounce": "none"
+        }
+      }
+    },
+    {
+      "path": "pages/login/resetPassword",
+      "style": {
+        "navigationBarTitleText": "",
+        "navigationStyle": "custom",
+        "app-plus": {
+          "titleNView": false,
+          "bounce": "none"
+        }
+      }
+    },
+    {
+      "path": "pages/login/agreement",
+      "style": {
+        "navigationBarTitleText": "",
+        "navigationStyle": "custom",
+        "app-plus": {
+          "titleNView": false,
+          "bounce": "none"
+        }
+      }
+    },
+    {
+      "path": "pages/login/register",
+      "style": {
+        "navigationBarTitleText": "",
+        "navigationStyle": "custom",
+        "app-plus": {
+          "titleNView": false,
+          "bounce": "none"
+        }
+      }
+    },
+    {
+      "path": "pages/set/set",
+      "style": {
+        "navigationBarTitleText": "",
+        "navigationStyle": "custom",
+        "app-plus": {
+          "titleNView": false,
+          "bounce": "none"
+        }
+      }
+    },
+    {
+      "path": "pages/set/setInfo",
+      "style": {
+        "navigationBarTitleText": "",
+        "navigationStyle": "custom",
+        "app-plus": {
+          "titleNView": false,
+          "bounce": "none"
+        }
+      }
+    },
+    {
+      "path": "pages/set/setPhone",
+      "style": {
+        "navigationBarTitleText": "",
+        "navigationStyle": "custom",
+        "app-plus": {
+          "titleNView": false,
+          "bounce": "none"
+        }
+      }
+    },
+    {
+      "path": "pages/set/setPassword",
+      "style": {
+        "navigationBarTitleText": "",
+        "navigationStyle": "custom",
+        "app-plus": {
+          "titleNView": false,
+          "bounce": "none"
+        }
+      }
+    },
+    {
+      "path": "pages/set/setWithPassword",
+      "style": {
+        "navigationBarTitleText": "",
+        "navigationStyle": "custom",
+        "app-plus": {
+          "titleNView": false,
+          "bounce": "none"
+        }
+      }
+    },
+    {
+      "path": "pages/search/search",
+      "style": {
+        "navigationBarTitleText": "搜索商品",
+        "app-plus": {
+          "titleNView": false
+        }
+      }
+    },
+    {
+      "path": "pages/search/search-result",
+      "style": {
+        "navigationBarTitleText": "搜索结果",
+        "app-plus": {
+          "titleNView": false
+        }
+      }
+    },
+    {
+      "path": "pages/search/search-result",
+      "style": {
+        "navigationBarTitleText": "搜索结果",
+        "app-plus": {
+          "titleNView": false
+        }
+      }
+    },
+    {
+      "path": "pages/user/user",
+      "style": {
+        "navigationBarTitleText": "我的",
+        "app-plus": {
+          "bounce": "none",
+          "titleNView": false
+        }
+      }
+    },
+    {
+      "path": "pages/gold/gold",
+      "style": {
+        "navigationBarTitleText": "我的金币",
+        "app-plus": {
+          "bounce": "none",
+          "titleNView": false
+        }
+      }
+    },
+    {
+      "path": "pages/recharge/recharge",
+      "style": {
+        "navigationBarTitleText": "充值",
+        "app-plus": {
+          "bounce": "none",
+          "titleNView": false
+        }
+      }
+    },
+    {
+      "path": "pages/withdraw/withdraw",
+      "style": {
+        "navigationBarTitleText": "提现",
+        "app-plus": {
+          "bounce": "none",
+          "titleNView": false
+        }
+      }
+    },
+    {
+      "path": "pages/recharge/recharge-success",
+      "style": {
+        "navigationBarTitleText": "充值成功",
+        "app-plus": {
+          "bounce": "none",
+          "titleNView": false
+        }
+      }
+    },
+    {
+      "path": "pages/withdraw/withdraw-success",
+      "style": {
+        "navigationBarTitleText": "提现成功",
+        "app-plus": {
+          "bounce": "none",
+          "titleNView": false
+        }
+      }
+    },
+    {
+      "path": "pages/collect/collect",
+      "style": {
+        "navigationBarTitleText": "我的收藏",
+        "app-plus": {
+          "bounce": "none",
+          "titleNView": false
+        }
+      }
+    },
+    {
+      "path": "pages/address/address",
+      "style": {
+        "navigationBarTitleText": "收货地址",
+        "app-plus": {
+          "titleNView": false
+        }
+      }
+    },
+    {
+      "path": "pages/address/addressManage",
+      "style": {
+        "navigationBarTitleText": "",
+        "app-plus": {
+          "titleNView": false
+        }
+      }
+    },
+    {
+      "path": "pages/goods/goods-detail",
+      "style": {
+        "navigationBarTitleText": "商品详情",
+        "app-plus": {
+          "bounce": "none",
+          "titleNView": false
+        }
+      }
+    },
+    {
+      "path": "pages/order/order",
+      "style": {
+        "navigationStyle": "custom",
+        "app-plus": {
+          "bounce": "none",
+          "titleNView": false
+        }
+      }
+    },
+    {
+      "path": "pages/order/create",
+      "style": {
+        "navigationBarTitleText": "创建订单",
+        "app-plus": {
+          "bounce": "none",
+          "titleNView": false
+        }
+      }
+    },
+    {
+      "path": "pages/order/detail",
+      "style": {
+        "navigationBarTitleText": "订单详情",
+        "app-plus": {
+          "bounce": "none",
+          "titleNView": false
+        }
+      }
+    },
+    {
+      "path": "pages/order/expressage",
+      "style": {
+        "navigationBarTitleText": "物流信息",
+        "app-plus": {
+          "bounce": "none",
+          "titleNView": false
+        }
+      }
+    },
+    {
+      "path": "pages/myWallet/myWallet",
+      "style": {
+        "navigationBarTitleText": "我的钱包"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#F8F8F8",
+    "backgroundColorTop": "#F6F6F6",
+    "backgroundColorBottom": "#F6F6F6"
+  },
+  "tabBar": {
+    "color": "#C0C4CC",
+    "selectedColor": "#fa436a",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "static/tabBar/home.png",
+        "selectedIconPath": "static/tabBar/home-act.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/stroll/stroll",
+        "iconPath": "static/tabBar/stroll.png",
+        "selectedIconPath": "static/tabBar/stroll-act.png",
+        "text": "逛逛"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "iconPath": "static/tabBar/cate.png",
+        "selectedIconPath": "static/tabBar/cate-act.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "static/tabBar/my.png",
+        "selectedIconPath": "static/tabBar/my-act.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

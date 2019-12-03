@@ -1,0 +1,235 @@
+.gold {
+  @bg-img: linear-gradient(90deg, #f78c87 0%, #ec597c 100%), linear-gradient(#000000, #000000);
+  height: 100%;
+  background-color: #f6f6f6;
+  position: relative;
+  .mask {
+    position: absolute;
+    z-index: 999999;
+    top: -80upx;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .6);
+    .setpassword {
+      width: 570upx;
+      height: 416upx;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50% ,-50%);
+	    background-color: #ffffff;
+      border-radius: 15upx;
+      text-align: center;
+      .image {
+        position: absolute;
+        right: 30upx;
+        top: 30upx;
+        width: 30upx;
+        height: 30upx;
+        background: url('../../static/gold/guanbi.png');
+        background-size: contain;
+        
+      }
+      .world {
+        font-size: 28upx;
+        font-family: MicrosoftYaHei;
+        color: #414141;
+        line-height: 39upx;
+        margin: 180upx 0 80upx;
+      }
+      .btn {
+        width: 473upx;
+        height: 80upx;
+        font-size: 34upx;
+        line-height: 80upx;
+        border-radius: 40px;
+        color: #fff;
+        margin: 0 auto;
+        background-image: linear-gradient(145deg, #f78c87 0%, #ec597c 100%),
+        linear-gradient(#c93802, #c93802);
+      
+    
+    opacity: 0.8;
+      }
+    }
+  }
+  &-bg {
+    background-image: @bg-img;
+    width: 750upx;
+    height: 117upx;
+  }
+  &-total {
+    position: relative;
+    padding-top: 25upx;
+    margin: -95upx auto 0;
+    width: 690upx;
+    height: 230upx;
+    background-color: #fff;
+   
+    border-radius: 15upx;
+    &-num {
+      text-align: center;
+      width: 690upx;
+      height: 78upx;
+      text {
+        vertical-align: top;
+        display: inline-block;
+        line-height: 78upx;    
+        font-size: 48upx;
+        color: #ff8d06;
+      }
+    }
+    &-tips {
+      width: 690upx;
+      text-align: center;
+      font-size: 24upx;
+      color: #818181;
+      font-family: MicrosoftYaHei;
+    }
+    &-cool {
+      width: 690upx;
+      font-family: MicrosoftYaHei;    
+      font-size: 28upx;
+      margin-top: 20upx;
+      color: #414141;
+      text-align: center;
+      .num {
+        font-family: MicrosoftYaHei;
+	      font-size: 28upx;
+	      color: #f84e91;
+      }
+    }
+    &-btn {
+      width: 690upx;
+      height: 110upx;
+      margin: 5upx auto 0;
+      background-color:#fff;
+      border-radius: 10upx;
+      box-shadow: 0upx 10upx 10upx 0upx rgba(186, 187, 188, 0.41);
+      display: flex;
+      view {
+        flex: 1;
+        text-align: center;
+        font-family: MicrosoftYaHei;
+        color: #f84e91;
+        font-size: 36upx;
+        .image {
+          vertical-align:top;
+          display: inline-block;
+          width: 60upx;
+          height: 60upx;
+          margin: 25upx 15upx 0 0;
+          background: url('../../static/gold/cz.png');
+          background-size: contain;
+        }
+        .world {
+          line-height: 110upx;
+        }
+        &:nth-child(2) {
+          position: relative;
+         &::after {
+          content: "";
+          position: absolute;
+          left: 0upx;
+          top: 30upx;
+          width: 2upx;
+          height: 50upx;
+          background-color: #f6f6f6;
+         }
+         .image {
+          background: url('../../static/gold/tx.png');
+          background-size: contain;
+         }
+        }
+      }
+    }
+  }
+  &-shop-list {
+    margin: 50upx 0 20upx 0;
+    // height: 600upx;
+    height: calc(100% - (var(--status-bar-height) + 88upx + 116upx + 344upx + 40upx));
+
+    .title {
+      position: relative;
+      text-indent: 50upx;
+      font-size: 32upx;
+      // color: #f84e91;
+      height: 70upx;
+      line-height: 70upx;
+      &::after {
+        content: ' ';
+        position: absolute;
+        left: 30upx;
+        top: 20upx;
+        width: 4upx;
+        height: 30upx;
+        // background-color: #f84e91;
+        background-color:#414141;
+        border-radius: 2upx;
+      }
+    }
+    .nolisttitle {
+      color: #f84e91;
+      &::after {
+        background-color: #f84e91;
+      }
+    }
+    .nolist {
+      display: block;
+      margin: 0 auto;
+    }
+   
+      .list-item {
+        box-sizing: border-box;
+        padding: 0 20upx;
+        margin: 0 auto 2upx;
+        width: 690upx;
+        height: 120upx;
+        background-color: #fff;
+        border-radius: 10upx;
+        display: flex;
+        justify-content: space-between;
+      
+          .l {
+            display: flex;
+            flex-direction:column;
+            view {
+              height: 60upx;
+              line-height: 60upx;
+              &:nth-child(1) {
+                font-size: 30upx;
+                color: #414141;
+                font-family: MicrosoftYaHei;
+              }
+              &:nth-child(2) {
+                font-family: MicrosoftYaHei;
+                font-size: 24upx;
+                color: #818181;
+              }
+            }
+          }
+          .r {
+            font-size: 30upx;
+            text-align: right;
+            line-height: 120upx;
+            color: #818181;
+          }
+          // .add {
+          //   color: #f10000;
+          // }
+          // .reduce {
+          //   color: #00ad29;
+          // }
+      }
+    
+  
+    .nomore {
+      margin-top: 50upx;
+      text-align: center;
+       font-family: MicrosoftYaHei;
+       font-size: 26upx;
+       color: #767676;
+     }
+  }
+}

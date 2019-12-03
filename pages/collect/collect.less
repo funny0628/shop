@@ -1,0 +1,98 @@
+.collect {
+  width: 750upx;
+  min-height: 100%;
+  height: 100%;
+  .mescroll-uni {
+    // margin-top: 30upx;
+    // margin-bottom: var(--window-bottom);
+  }
+  background-color: #f6f6f6;
+  .empty {
+    padding-top: 113upx;
+    &-icon {
+      display: block;
+      margin: 0 auto;
+      width: 158upx;
+      height: 158upx;
+    }
+    &-text {
+      text-align: center;
+      margin-top: 40upx;
+      height: 26upx;
+      line-height: 26upx;
+      font-size: 26upx;
+      color: #818181;
+    }
+  }
+  &-list {
+    padding-left: 30upx;
+    margin-top: 30upx;
+    &-item {
+      width: 690upx;
+      height: 260upx;
+      background-color: #fff;
+      border-radius: 10upx;
+      font-size: 0;
+      margin-bottom: 2upx;
+      margin-top: 10upx; 
+    }
+    .imgurl {
+      display: inline-block;
+      vertical-align: top;
+      margin: 30upx 20upx;
+      width: 200upx;
+      height: 198upx;
+      border-radius: 10upx;
+    }
+    .text {
+      position: relative;
+      margin: 30upx 0;
+      display: inline-block;
+      vertical-align: top;
+      width: 430upx;
+      height: 198upx;
+      .title {
+        width: 430upx;
+        min-height: 62upx;
+        height: 62upx;
+        font-size: 26upx;
+        line-height: 36upx;
+        color: #2d2d2d;
+      }
+      .price {
+        margin-top: 8upx;
+        line-height: 28upx;
+        color: #ff8d06;
+        .small {
+          font-size: 22upx;
+        }
+        .big {
+          font-size: 30upx;
+        }
+        .money {
+          color: #f84e91;
+        }
+        .gold {
+          color: #ff8d06;
+        }
+        .plus {
+          font-size: 30upx;
+          color: #767676;
+        }
+      }
+      .btn {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 150upx;
+        height: 60upx;
+        line-height: 60upx;
+        border-radius: 30upx;
+        border: solid 2upx #767676;
+        font-size: 24upx;
+        color: #767676;
+        text-align: center;
+      }
+    }
+  }
+}

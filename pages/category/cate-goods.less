@@ -1,0 +1,113 @@
+.cate-goods {
+  @bg-img: linear-gradient(90deg, #f78c87 0%, #ec597c 100%),
+    linear-gradient(#000000, #000000);
+  background-color: #f6f6f6;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .scroll-wrap {
+    flex: 1;
+    height: 0;
+  }
+  &-tab {
+    position: relative;
+    height: 88upx;
+    flex-basis: 88upx;
+    // width: 750upx;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 0;
+    ::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+      background-color: transparent;
+    }
+    &-item {
+      display:inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 200upx;
+      font-size: 28upx;
+      color: #000;
+      line-height: 88upx;
+    }
+    .underline-wrap {
+      width: 200upx;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 4upx;
+      position: absolute;
+      left: 0upx;
+      bottom: 10upx;
+      z-index: 99;
+      &.transit{
+        transition: 0.5s;
+      }
+      .underline {
+        margin: 0 auto;
+        height: 4upx;
+        background-color: #f84e91;
+      
+        border-radius: 5upx;
+      }
+  }
+    .active {
+      position: relative;
+      font-size: 30upx;
+      color: #f84e91;
+    }
+  }
+ 
+  &-list {
+    // margin-top: 40upx;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30upx;
+    // justify-content: space-evenly;
+    //  justify-content: center;
+    flex-flow: row wrap;
+    align-content: flex-start;
+  
+    &-item {
+      margin-left:30upx; 
+      &:nth-of-type(n + 3) {
+        margin-top: 20upx;
+      }
+     
+    }
+  }
+}
+
+
+.empty {
+    margin: 0 auto;
+    padding-top: 113upx;
+    &-icon {
+      display: block;
+      margin: 0 auto;
+      width: 158upx;
+      height: 158upx;
+    }
+    &-text {
+      text-align: center;
+      margin-top: 40upx;
+      height: 26upx;
+      line-height: 26upx;
+      font-size: 26upx;
+      color: #818181;
+    }
+    .button {
+      margin: 70upx auto 0;
+      width: 224upx;
+      height: 70upx;
+      line-height: 70upx;
+      background-image: linear-gradient(82deg, #f78c87 0%, #ec597c 100%),
+        linear-gradient(#ff7c4b, #ff7c4b);
+      background-blend-mode: normal, normal;
+      border-radius: 12upx;
+      color: #fefefe;
+      font-size: 28upx;
+      text-align: center;
+    }
+  }

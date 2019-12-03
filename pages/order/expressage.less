@@ -1,0 +1,111 @@
+page {
+  background-color: #f6f6f6;
+}
+.expressage {
+  height: 100%;
+  @headHeight: 250upx;
+  @bg-img: linear-gradient(90deg, #f78c87 0%, #ec597c 100%), linear-gradient(#000000, #000000);
+  padding-bottom: calc(@headHeight);
+  &-head {
+    height: @headHeight;
+    background-image: @bg-img;
+    overflow: hidden;
+    &-content {
+      margin-top: 80upx;
+      height: 90upx;
+      padding: 0 50upx 0 30upx;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .left {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 34upx;
+        color: #fff;
+      }
+      .right {
+        &-icon {
+          width: 16upx;
+          height: 24upx;
+          display: flex;
+          image {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+  &-list {
+    padding-top: 60upx;
+    // margin: 30upx 30upx 0 30upx;
+    margin: 30upx;
+    background-color: #fff;
+    &-item {
+      display: flex;
+      margin: 0 86upx;
+      // border-left: 1upx solid #ccc;
+      position: relative;
+
+      .item-line {
+        position: absolute;
+        top: 10upx;
+        // bottom: 0;
+        background-color: #ccc;
+        // height: calc(100% - 10upx);
+        height: 100%;
+        width: 1upx;
+      }
+      &:last-of-type {
+        // border: none;
+        .item-line {
+          height: 0;
+        }
+      }
+      .item-content {
+        padding-left: 86upx;
+        padding-bottom: 50upx;
+        position: relative;
+        &::after {
+          content: "";
+          width: 20upx;
+          height: 20upx;
+          position: absolute;
+          // top: -10upx;
+          top: 10upx;
+          left: -10upx;
+          border-radius: 50%;
+          background-image: linear-gradient(#f84e91, #f84e91), linear-gradient(#f84e91, #f84e91);
+        }
+
+        .item-description {
+          font-size: 28upx;
+          color: #414141;
+        }
+        .item-time {
+          font-size: 24upx;
+          color: #818181;
+        }
+      }
+    }
+  }
+  .empty {
+    padding-top: 300upx;
+    &-icon {
+      display: block;
+      margin: 0 auto;
+      width: 158upx;
+      height: 158upx;
+    }
+    &-text {
+      text-align: center;
+      margin-top: 40upx;
+      height: 26upx;
+      line-height: 26upx;
+      font-size: 26upx;
+      color: #818181;
+    }
+  }
+}
